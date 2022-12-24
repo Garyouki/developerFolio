@@ -22,9 +22,10 @@ const illustration = {
 const greeting = {
   username: "Gary Zheng",
   title: "Hi all, I'm Gary",
-  subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
-  ),
+  // subTitle: emoji(
+  //   "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+  // ),
+  subTitle: "A passionate Full Stack Software Engineer dedicated to improving skills through hands-on learning and development work. Well-organized and collaborative team player with strong communication and analytical abilities.",
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -138,7 +139,7 @@ const educationInfo = {
     },
     {
       schoolName: "Denison University",
-      logo: require("./assets/images/denison.png"),
+      logo: require("./assets/images/DU.jpeg"),
       subHeader: "Bachelor of Art in Mathematics",
       duration: "September 2018 - May 2021",
       desc: "GPA: 3.84/4.00"
@@ -183,29 +184,40 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Software Developer Internship",
+      company: "Amazon",
+      companylogo: require("./assets/images/amz.jpeg"),
+      date: "Sept 2022 – Dec 2022",
+      desc: "Skills: Python, AWS, Mockkito, Amazon S3, C++, Docker, Flask, Linux",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed a package for handling large amounts of network-probing data, resulting in a 96%+ success rate on the CI/CD pipeline",
+        "Created a RESTful API using Flask for data uploading in the embedded cart system, which saved 50% of the time previously spent on data uploading",
+        "Updated integrated systems, databases, and web applications to meet security standards in agile development."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Engineer Internship",
+      company: "Elekta",
+      companylogo: require("./assets/images/elekta.jpeg"),
+      date: "May 2022 – Aug 2022",
+      desc: "Skills: JavaScript, Node.js, C#, Azure, Mocha, React.js, MySQL, PostgreSQL",
+      descBullets: [
+        "Worked for Elekta SDK, enabling third-party applications to communicate with internal/external API endpoints.",
+        "Maintained React-based web application with SQL, improving usability by 70%.",
+        "Monitored frontend and backend services in production environments, reporting and tracking real-time outages and internal errors for over 500 products in the database."
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Product Sprint Developer",
+      company: "Google",
+      companylogo: require("./assets/images/google.jpeg"),
+      date: "May 2022 – Aug 2022",
+      desc: "Skills: Java, HTML/CSS, JavaScript, Google Cloud, SpringBoot, Junit",
+      descBullets: [
+        "Led team to design and implement MVP web app, leveraging various Google Cloud Platform APIs.",
+        "Applied industry best practices, including code reviews, codebase extension,and user interface planning.",
+        "Managed and reviewed contributor pull requests for Google open-source, cross-platform application."
+      ]
     }
   ]
 };
@@ -213,10 +225,6 @@ const workExperiences = {
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
 
 // Some big projects you have worked on
 
@@ -225,25 +233,25 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/quoraLogo.png"),
+      projectName: "QA Platform",
+      projectDesc: "A personal knowledge sharing platform",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://github.com/Garyouki/QA-platform"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/food.jpeg"),
+      projectName: "Food Calculator",
+      projectDesc: "A food Calculator helps people calcuate users’ daily calorie intake",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://github.com/SPS-2022-Team-4/team-4-2022-summer-sps"
         }
       ]
     }
@@ -251,6 +259,11 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
+
+const openSource = {
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
+};
 // Achievement Section
 // Include certificates, talks etc
 
@@ -261,53 +274,54 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "CodePath Tech Prep Interviewer",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Helped students gain a preview of real-world software topics and be prepared to solve challenging algorithmic problems in whiteboard and coding interviews.",
+      image: require("./assets/images/codepath.jpeg"),
+      // imageAlt: "Google Code-In Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        // {
+        //   name: "Certification",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        // },
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Google SPS",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "The Software Product Sprint (SPS) program is committed to increasing representation in tech by building a network of support for students who identify with historically excluded groups. ",
+      image: require("./assets/images/g.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        { name: "Certification", url: "" },
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        // {
+        //   name: "View Google Assistant Action",
+        //   url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        // }
       ]
     }
+    // },
+
+    // {
+    //   title: "PWA Web App Developer",
+    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+    //   image: require("./assets/images/pwaLogo.webp"),
+    //   imageAlt: "PWA Logo",
+    //   footerLink: [
+    //     // { name: "Certification", url: "" },
+    //     // {
+    //     //   name: "Final Project",
+    //     //   url: "https://pakistan-olx-1.firebaseapp.com/"
+    //     // }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -372,8 +386,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  // number: "+92-0000000000",
+  email_address: "gary313312849@gmail.com"
 };
 
 // Twitter Section
